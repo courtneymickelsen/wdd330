@@ -7,7 +7,7 @@ Comments are the same as CSS and PHP-
 /* Multi-line */
 
 Javascript has Automatic semicolon insertion (ASI)- which is why I sometimes find code executing without semicolons.
-It can be error-prone and won't work with minifiers though, so best practice is the still use semicolons and end lines after each line of code.
+It's error-prone and won't work with minifiers, so best practice is to use semicolons and end lines after each line of code.
 Blocks {} don't need semicolons after them. 
 
 Certain words are reserved from use as variable names, etc. You'll get an error.
@@ -40,14 +40,52 @@ Numbers with exponents - e
 Infinity = too big or too small (-Infinity) for the computer to process.
 Dividing by 0 = Infinity
 
-Number() (this return NaN if the string isn't a number in string form)
+Number() -this returns NaN if the string isn't a number in string form
 String() / toString()
 
 parse()-
 You can include the base number (aka 10, 2 for binary, etc.)
+This can take strings that start with numbers and have words after them. 
+It'll chop off the words as well as any decimal portions of the number.
 
+Empty strings in Javascript are considered False! As well as 0, -0, Null, etc.
+
+Logical operands are &&, and ||... not just & and |.
+
+delete array_name[index] will delete it from the array, but not the slot. It'll be undefined.
+splice() will delete the slot as well as the item, or can be used to replace an item.
+
+Destrucurizing is a nice little life hack for swapping values, e.g. [x, y] = [y, x]
+
+shift() = pop() but for the beginning of an array.
+unshift() = push() but for the beginning of an array.
+
+You can concatenate arrays, like strings.
+
+Join returns a string of an entire array with commas between each item.
+You can replace the comma with whatever you pass in.
+
+Dont use new Function("function body") to declare you functions. Causes issues for fucntion body.
+
+(...argList) ("rest") returns an array of all arguments passed into a function.
+
+Default parameters should come after non-default. e.g. (arg1, arg2=value)
+
+Arrow functions (always have been confusing to me)-
+The are always anonymous, so you should store them in a variable.
+Best for short and simple functions.
+Syntax-
+const funcName = (args) => {function body};
+Parentheses and curly braces are optional if there's only 1 thing (argument or line of code) in them.
+
+Hoisting- All variables are hoisted to the top of their scope, but not their assigned value.
+They exists, but won't be helpful. Declare them first.
+Same with function declarations, so make sure you actual define them before using them if you're using that method.
+
+Callbacks- Makes sense. You can choose when calling the outer function which one you want it to callback during execution.
 
 Questions- 
 * What are Symbols used for? (The actual datatype called symbol).
 * Does the program know anything about Symbols besides their datatype and description? Is there anything else that's stored?
 * It says that the best use-case for Symbols is as object property keys... What does that mean?
+* What's the biggest difference between a set and a map? I've used arrays and sets, but not maps.
