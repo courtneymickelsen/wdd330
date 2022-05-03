@@ -1,0 +1,53 @@
+Week 2 Notes
+
+Reading:
+
+Comments are the same as CSS and PHP-
+// Single-line
+/* Multi-line */
+
+Javascript has Automatic semicolon insertion (ASI)- which is why I sometimes find code executing without semicolons.
+It can be error-prone and won't work with minifiers though, so best practice is the still use semicolons and end lines after each line of code.
+Blocks {} don't need semicolons after them. 
+
+Certain words are reserved from use as variable names, etc. You'll get an error.
+Should be included but aren't- undefined, NaN, and Infinity.
+
+Anything that isn't a primitive datatype is an oject. Blew my mind. 
+This includes arrays, functions, etc. Very crazy for some reason.
+
+Non-primitive datatypes are always mutable.
+
+You can type a variable name in the console and it will print tha vlaue for you! Never knew that.
+
+You can declare variables all at once like this- let variable1 = 1, variable2 = 2, variable3 = 3;
+
+Global variables are bad practice.
+
+Square bracket notation is a thingif you don't want to use dot notation.
+
+You can always use backtickas for strings even if they're not a template literal.
+
+Symbol datatypes don't have a literal form. I don't really understand how this works still.
+If you log it to the console, you'll only get it's description.
+
+All number datatypes:
+Hex Numbers- Start with 0x
+Octal literals- Start with 0o
+Binary numbers- Start with 0b
+Numbers with exponents - e
+
+Infinity = too big or too small (-Infinity) for the computer to process.
+Dividing by 0 = Infinity
+
+Number() (this return NaN if the string isn't a number in string form)
+String() / toString()
+
+parse()-
+You can include the base number (aka 10, 2 for binary, etc.)
+
+
+Questions- 
+* What are Symbols used for? (The actual datatype called symbol).
+* Does the program know anything about Symbols besides their datatype and description? Is there anything else that's stored?
+* It says that the best use-case for Symbols is as object property keys... What does that mean?
