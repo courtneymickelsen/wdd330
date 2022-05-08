@@ -1,0 +1,105 @@
+Week 3 Notes
+
+Object Methods: This:
+
+Objects are kinda just complicated dictionaries if you think about it. Anyway, dicts are a type of objects.
+OOP is a thing for JavaScript.
+
+'this' is to JavaScript what 'self' is to Python.
+
+Syntax for obj methods/variables- 
+objectName.variableName = data;
+objectName.methodName = function() {function body};
+
+Example of using 'this'-
+this.methodName();
+
+'this' can be used in any function, even when it's not an ojbect method??
+Ohhh okay so you could pass in something from an object to a normal function and 
+if 'this' is used in the function then it will use th object passed as 'this'.
+If you called it with no object referenced then 'this' will be undefined.
+
+'this' is unbound, meaning it's evaluated at runtime and doesn't haev to correlate with one object.
+It's decided by what comes before the dot (dot notation).\
+
+Arrow functions have no 'this'. Instead it will come from outer function if it exists.
+
+Chapter 5: Objects:
+
+An object literal means you grouped the object items in curly braces (aka you literally created it in the program).
+Properties are key-value pairs, just like in a dictionary.
+Example of object literal-
+const objectName = {objectContent};
+
+Another way- 
+const objectName = new Object(); -Not recommended, use object literals-
+
+Methods are comma separated, not semicolon separated.
+
+All objects are mutable, even if it was declared using const.
+
+Bracket notation os the only way to access variables that don't follow naming rules (most do though).
+
+All objects have the method hasOwnProperty() to check if it has certain variables (properties).
+This won't show properties that are inherited, but using 'in' will.
+
+To see all properties of an object, use a for(_in_) loop.
+
+'delete' keyword can delete properties or methods from objects.
+
+Objects are automatically assigned by reference (thank goodness).
+But this means if you create a copy of an object and update it, the original gets altered as well.
+
+Object literal pattern- use a namespace to organize related methods. This is basically just like creating a class in Python
+and making all the functions into class methods. Same idea anyway. You can then access them with namespaceName.methodName
+
+JSON is a string -representation- of an object literal. Can't store functions because it needs to be lightweight.
+
+parse() turns json into Javascript Object, stringify() turns a Javascript Object into JSON.
+
+Math is a built-in object. Plenty of uses, google anything and it'll probably be there (better than I could put it here).
+
+Getter and Setter methods are the same idea as in Python classes.
+
+Regexp is covered here. Helpful reference. I have worked with them plenty before.
+
+Chapter 6:
+
+DOM is html represented by nodes. It's also language agnostic, interesting. Got this pretty much down.
+
+Document.anything basically will get that section/content from the DOM.
+You can also access one item like an array using Document.contentName[0].
+
+childNodes is good to remember (it returns all children nodes of given node of course).
+children does the same but excludes text nodes, only includes element nodes.
+
+This helped tie in everything I was already doing in JS. I understand better all the get and set methods now.
+Kinda relates it to my experience in other languages and how similar they all are. This is just interacting with the DOM instead of something else.
+This chapter mostly covered everythning I knew already about JS.
+
+Remember insertBefore() and replaceChild() methods if appendChild isn't right for the situation!!
+
+CSS properties are turned camelCase to access in JS, but it's better to change class names, etc. and keep styling in CSS.
+
+Chapter 7:
+
+Yay I knew almost everything in this chapter pretty much! Nice.
+
+Don't use inline (aka onclick=methodName(). Add listeners is JS).
+
+I didn't realize event listeners used callbacks to do what they do! Makes sense if I think about it though.
+
+The keypress event is only for character keys and delete, not modifier keys.
+
+Popup dialogues end touch events. Also, there's no such thing as a swipe listener.
+They're just combos of touch start, leave and move listeners. That blew my mind.
+
+Propogation: capturing/bubbling. Bubbling is default, add a True argument (3rd arg) to addEventListener to use capturing.
+
+Questions:
+
+* What's the relatinoship between Javascript Objects and JSON (JS Object Notation)?
+  Is JSON just a way to store objects? And why can't it store every kind of object (functions, etc.)?
+* What is the symbol data type good for? Look up a video on this!
+* What is a namespace?
+* When you go to leave a webpage and you get a "don't leave yet!" message, are they using the mouseout listener?
