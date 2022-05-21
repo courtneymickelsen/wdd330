@@ -1,0 +1,29 @@
+Chapter 8: Forms:
+
+You can 'process' a form on the front-end using Javascript and input values.
+
+Gets the first form from the page (JS):
+const form = document.forms[0];
+const form = document.forms['form-name'];
+
+form.submit() will submit the form but not trigger the submit event.
+
+Focus, blur, change, and submit are the most important form events, submit is number 1.
+
+type="password" will make the characters be concealed.
+
+Checkboxes can be checked with .checked = true.
+
+
+
+Chapter 12: Object-Oriented Programming:
+
+
+
+Chapter 15: Modern Javascript (Modular JS Section):
+
+
+
+Questions:
+
+- Instead of variableName.value can you use variableName.placeholder? Tried it. You can.
