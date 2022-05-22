@@ -1,0 +1,43 @@
+Chapter 10: 
+
+Three types of errors- System, Programmer, or User
+
+Exceptions send a return value and a stack trace
+
+Warnings are when it's not bad enough to crash. Can be bad if it'll throw
+things off further down the road. Makes it harder to track and prevent.
+
+You want it to fail loudly in development and quietly on the user's end.
+
+JS5 and on lets you use strict mode with 'use strict';
+You can even use it only in one function, etc. Applies to it's scope.
+
+Linting tools go beyond what strict mode does.
+
+Feature detection helps with versions/browsers that don't suppport everything.
+Use an if statement to see if it exists- if (feature) {};
+Another good thing is 'Can I Use?' (online, just google it).
+
+alert() is one of the easiest ways to debug in JS. USE THIS.
+
+Console is helpful and it's probably a good thing I know how ot use it and 
+the debugger and breakpoints, etc.
+
+Creating an error object is the most  brilliant thing! Then you can customize 
+your error based on context.
+
+You can throw your own exceptions! Keyword- throw thingToThrow;
+Best to throw error object.
+
+Error handling is with try (actual code), catch (if error happens), finally (after either one).
+
+I actually learned about TDD earlier this week! Jest is popular.
+
+
+
+Questions:
+
+- Javascript usually won't stop a page from loading but it can stop all the javascript from running. 
+Would those things be considered exceptions or warnings?
+- Errors as objects?? Cool honestly. I have all the questions.
+- What exactly does throwing something do? How is it diffferent than other actions?
