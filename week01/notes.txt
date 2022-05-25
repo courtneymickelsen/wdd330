@@ -15,10 +15,6 @@ You can access the value by using the key to find it.
 
 When using input or textarea, use '.value', when using section, use '.innerHTML'.
 
-Questions- 
-- It says the header tags only go through h4... Is that true? I thought it was h6.
-- They didn't use labels for their input... but I did. It think it's better that way?
-
 Video:
     
 Design for the smallest and least powerful device (that your software will be viewed on) first.
@@ -36,3 +32,8 @@ constraints being addressed (bandwidth, etc.), and help your site be ready for g
 
 People aren't on laptops/desktops 24/7, but people check their phones an average of 344 times a day.
 Mobile isn't a fad- and neither are new devices. We have to make sure we're ready to include them.
+
+Questions:
+
+* It says the header tags only go through h4... Is that true? I thought it was h6.
+* They didn't use labels for their input... but I did. It think it's better that way?

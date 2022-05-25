@@ -94,7 +94,7 @@ The keypress event is only for character keys and delete, not modifier keys.
 Popup dialogues end touch events. Also, there's no such thing as a swipe listener.
 They're just combos of touch start, leave and move listeners. That blew my mind.
 
-Propogation: capturing/bubbling. Bubbling is default, add a True argument (3rd arg) to addEventListener to use capturing.
+Propogation- capturing/bubbling. Bubbling is default, add a True argument (3rd arg) to addEventListener to use capturing.
 
 Questions:
 

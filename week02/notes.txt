@@ -84,7 +84,8 @@ Same with function declarations, so make sure you actual define them before usin
 
 Callbacks- Makes sense. You can choose when calling the outer function which one you want it to callback during execution.
 
-Questions- 
+Questions:
+
 * What are Symbols used for? (The actual datatype called symbol).
 * Does the program know anything about Symbols besides their datatype and description? Is there anything else that's stored?
 * It says that the best use-case for Symbols is as object property keys... What does that mean?

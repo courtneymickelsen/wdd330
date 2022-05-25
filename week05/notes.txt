@@ -37,7 +37,7 @@ I actually learned about TDD earlier this week! Jest is popular.
 
 Questions:
 
-- Javascript usually won't stop a page from loading but it can stop all the javascript from running. 
+* Javascript usually won't stop a page from loading but it can stop all the javascript from running. 
 Would those things be considered exceptions or warnings?
-- Errors as objects?? Cool honestly. I have all the questions.
-- What exactly does throwing something do? How is it diffferent than other actions?
+* Errors as objects?? Cool honestly. I have all the questions.
+* What exactly does throwing something do? How is it diffferent than other actions?

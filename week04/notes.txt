@@ -25,5 +25,4 @@ Chapter 15: Modern Javascript (Modular JS Section):
 
 
 Questions:
-
-- Instead of variableName.value can you use variableName.placeholder? Tried it. You can.
+* Instead of variableName.value can you use variableName.placeholder? Tried it. You can.
