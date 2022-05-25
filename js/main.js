@@ -3,19 +3,31 @@ let list = document.querySelector('#dynamic');
 const links = [
     {
         label: "Week 1 Notes",
-        url: "week1/notes.txt"
+        url: "week01/notes.txt"
     },
     {
         label: "Week 1 Exercises",
-        url: "week1/story-editor.html"
+        url: "week01/story-editor.html"
     },
     {
         label: "Week 2 Notes",
-        url: "week2/notes.txt"
+        url: "week02/notes.txt"
     },
     {
         label: "Week 3 Notes",
-        url: "week3/notes.txt"
+        url: "week03/notes.txt"
+    },
+    {
+        label: "Week 4 Notes",
+        url: "week04/notes.txt"
+    },
+    {
+        label: "Week 4 Exercises",
+        url: "week04/hero.html"
+    },
+    {
+        label: "Week 5 Notes",
+        url: "week05/notes.txt"
     }
 ];
 
