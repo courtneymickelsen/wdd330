@@ -1,0 +1,69 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    display: grid;
+    color: rgb(89, 129, 143);
+    text-align: center;
+}
+
+h1 {
+    color: rgb(89, 129, 143);
+    /* background-color: rgb(87, 87, 87); */
+    border: 2px rgb(89, 129, 143) solid;
+    border-radius: 5px;
+}
+
+div {
+    margin: auto;
+    max-width: 400px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+li {
+    list-style: none;
+    margin: auto;
+}
+
+ul {
+    padding: 0px;
+}
+
+#buttonDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#creationDiv {
+    display: flex;
+    /* grid-template-columns: 5fr 1fr; */
+}
+
+button {
+    color: rgb(89, 129, 143);
+    background-color: rgb(213, 233, 240);
+    border: 2px rgb(89, 129, 143) solid;
+    border-radius: 5px;
+    min-height: 30px;
+    min-width: 30px;
+    margin: 5px;
+}
+
+input {
+    border: 2px rgb(89, 129, 143) solid;
+    border-radius: 5px;
+    width: 80%;
+    height: 30px;
+    margin: 5px;
+}
+
+.completed li {
+    text-decoration: line-through;
+}
+
+.hidden {
+    display: none;
+}
