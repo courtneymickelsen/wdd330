@@ -21,6 +21,7 @@ div {
 section {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    max-width: 100%;
 }
 
 li {
