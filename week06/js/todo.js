@@ -12,6 +12,9 @@ addButton.addEventListener('click', createListItem);
 allFilterButton.addEventListener('click', allFilter);
 activeFilterButton.addEventListener('click', activeFilter);
 completedFilterButton.addEventListener('click', completedFilter);
+listItemText.addEventListener('keypress', key => {
+    if (key.key == "Enter") createListItem();
+});
 
 // load the items from local storage
 loadList();
