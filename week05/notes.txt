@@ -29,15 +29,15 @@ your error based on context.
 You can throw your own exceptions! Keyword- throw thingToThrow;
 Best to throw error object.
 
-Error handling is with try (actual code), catch (if error happens), finally (after either one).
+Error handling- try (actual code), catch (if error happens), finally (after either one).
 
 I actually learned about TDD earlier this week! Jest is popular.
 
-
-
 Questions:
 
-* Javascript usually won't stop a page from loading but it can stop all the javascript from running. 
-Would those things be considered exceptions or warnings?
+* Javascript usually won't stop a page from loading but it can stop all the javascript 
+  from running. Would those things be considered exceptions or warnings?
+
 * Errors as objects?? Cool honestly. I have all the questions.
+
 * What exactly does throwing something do? How is it diffferent than other actions?

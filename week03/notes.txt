@@ -98,8 +98,11 @@ Propogation- capturing/bubbling. Bubbling is default, add a True argument (3rd a
 
 Questions:
 
-* What's the relatinoship between Javascript Objects and JSON (JS Object Notation)?
+* What's the relationship between Javascript Objects and JSON (JS Object Notation)?
   Is JSON just a way to store objects? And why can't it store every kind of object (functions, etc.)?
+
 * What is the symbol data type good for? Look up a video on this!
+
 * What is a namespace?
+
 * When you go to leave a webpage and you get a "don't leave yet!" message, are they using the mouseout listener?

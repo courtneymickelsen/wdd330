@@ -32,8 +32,11 @@ const links = [
     {
         label: "To Do List",
         url: "week06/todo.html"
+    },
+    {
+        label: "Week 7 Notes",
+        url: "week07/notes.txt"
     }
-
 ];
 
 links.forEach(function(item) {

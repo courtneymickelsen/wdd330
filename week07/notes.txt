@@ -1,0 +1,69 @@
+Chapter 11: Further Functions:
+
+All functions have certain properties automatically (length, etc).
+You can always add your own properties to functions like this: funcName.propName = value;
+One use for this is a cache- storing results for each call so it doesn't have to compute
+  them again later. Like this: funcName.cache = funcName.cache || {}; Then add the 
+  variable and the result as a key/vaule pair.
+
+Immediately Invoked Function Expressions (IFFEs) are executed as soon as they're created.
+  To do this, just put parentheses after the function definition and put the whole 
+  definition in parentheses as well.
+
+You can redefine a function within itself! I never thought about this! Create a variable
+  with the same name as the function (inside it) and make it a function that does 
+  something different. Place it after whatever you want to happen during the first call.
+
+How to add a pause to your code: setTimeout(callback, seconds*1000); I've been wondering.
+
+Promises can let you do different things based on the outcome of the promise. They're 
+  either resolved or rejected. You set the terms and all of it, kinda like a function.
+You can also use .then and .catch so if it goes through it will do one thing, but if 
+  there's an error you can handle it gracefully (with catch). Helps avoid callback hell.
+You can chain as many '.then's as you want after a promise. If a .then fails, it moves 
+  right to the .catch at the end of the block or whatever you call it. 
+You can also use try/catch blocks instead if they're better for the situation.
+
+Okay so I thought a closure was a variable that just holds an IFFE that you could use 
+  again, which would just be the same as a normal function so it seemed useless. But it
+  is actually a variable that holds a function as well as the stuff surrounding it in 
+  order to use a variable outside of it's scope.
+I should probably look more into closures to understand them a bit better.
+
+Pure functions- returns only depend on argument values (not others from elsewhere in the
+  program), doesn't change anything in other places in the program, and has referential 
+  transparency (the same arguments will always return the same result). Must have at 
+  least one argument and a return value (otherwise it is relying on things elsewhere in 
+  the program since it has to be doing something).
+
+Functional programming is more predictable than other programming types because of the
+  rules above, and does really well with memoization because of referential transparency.
+
+Higher-order functions use another function as a parameter or return value, or both.
+Allows you to return different functions depending on the parameters passed. Helpful in 
+  functional programming I guess.
+
+Currying- partial application of functions. Basically lets you return a value or another 
+  function based on whether all arguments were provided. So you can use it to create 
+  another function that uses one certain parameter every time. If not all parameters are
+  filled, it will return a function you can call with another parameter until all the
+  variables have been passed in.
+
+Questions:
+
+* What's the difference between using the .call() method and just calling a function the 
+  normal way? Wouldn't funcName.call(argName); do the same thing as funcName(argName); 
+  would do? I don't understand what else it adds/does for the program or function.
+
+* How often is strict mode used in the real world? Is it a common practice?
+
+* If you redefined a function and then called it within itself, would it do both things?
+  And then after that when you called it would it only do the stuff in the new part and 
+  not call it twice? I feel like it would. Oh look, it talked about that next. Haha.
+
+* Recursion is the single most difficult programming concept for me to understand.
+
+* What are the differences between procedural, functional, and object-oriented 
+  programming? And is what ways do they overlap? I understand OOP better than the others.
+
+* What are closures actually used for? I don't really understand how/when they'd be used.

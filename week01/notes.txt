@@ -20,7 +20,7 @@ Video:
 Design for the smallest and least powerful device (that your software will be viewed on) first.
 
 Desktop declined and mobile has skyrocketed (in use and sales), which means we now design for 
-many, many screen types rather than just one- the average person has 2-3 devices now.
+  many, many screen types rather than just one- the average person has 2-3 devices now.
 You have to be able to display resposively to all of them.
 
 Just because a site is responsive does not mean it was designed mobile first. 
@@ -28,7 +28,7 @@ There are more likely to be errors in design when you don't put mobile first, le
 
 Even though a re-write is costly and time-consuming, the pros usually outweigh it in the long run.
 A rewrite to put mobile first will lead to the best uesr experience across devices,
-constraints being addressed (bandwidth, etc.), and help your site be ready for growth.
+  constraints being addressed (bandwidth, etc.), and help your site be ready for growth.
 
 People aren't on laptops/desktops 24/7, but people check their phones an average of 344 times a day.
 Mobile isn't a fad- and neither are new devices. We have to make sure we're ready to include them.
@@ -36,4 +36,5 @@ Mobile isn't a fad- and neither are new devices. We have to make sure we're read
 Questions:
 
 * It says the header tags only go through h4... Is that true? I thought it was h6.
+
 * They didn't use labels for their input... but I did. It think it's better that way?

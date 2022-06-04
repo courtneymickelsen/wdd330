@@ -1,6 +1,12 @@
-Chapter __:
+Chapter 0: Name:
 
-__
+If a sentence is more than ninety characters long, the line ends and then continues on
+  the next line with two spaces before it. Same with questions.
+
+Another sentence.
 
 Questions:
-* __
+
+* 
+
+* 
