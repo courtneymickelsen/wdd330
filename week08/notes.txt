@@ -1,0 +1,72 @@
+Chapter 8: Transforms and Transitions:
+
+CSS3 was revolutionary it seems. Haha. Now you can transform/transition things like mad.
+
+Transform stuff-
+
+They don't work on inline elements. Use block or inline-block.
+
+translate(x, y) moves things relative to it's current position. Can also use translateX()
+  and translateY() to move it only in one direction.
+scale(x, y) makes things bigger/smaller. Only one variable will be used for both.
+rotate()... rotates. Wild. Positive is clockwise, negative is counter-clockwise.
+skew() stretches it all funky in whatever direction. I have a feeling I won't use this.
+transform-origin will move where the transforms stem from, if that makes sense.
+
+Order of transforms does matter, and all need to be in one block/statement. Transforms 
+  will update the axis/potitions for the next one in line.
+
+Still takes up the same space/size as before, while altering an actual property will not.
+
+Transition stuff-
+
+Simple animations by letting changes happen over time instead of immediately.
+
+Declared in the original state, then it transitions in the new state automatically.
+You can't transition between hidden and visible.
+
+Older browsers might not support transitions, only the update without looking pretty.
+
+transition-property tells which property needs the transition- color, position, etc. The
+  default is all properties that are changed. Use commas to select more than one.
+transition-duration decides how long it takes. s=seconds, ms=milliseconds. 200ms is the
+  standard optimum time.
+transition-timing-function does even more specific timing, like ease (-in, -out or both),
+  linear, etc.
+transition-delay does exactly what you think it would.
+transition is the shorthand version, includes all 4 of the ones above.
+
+Animation stuff-
+
+Syntax:
+@keyframes myAnimation {
+  include keyframes here
+}
+
+Okay this stuff is confusing. I'm going to have to watch some videos about keyframes.
+
+First you create it, using the synax above. Then you attach it to an element by using
+  animation-name: myAnimation; and animation-duration: (time); in the element's block.
+
+animation-iteration-count defines how many times the animation will play through.
+animation-direction decide if it moves forward or backward, or back and forth.
+animation-delay does what you think. Haha.
+animation-fill-mode is confusing. forwards means the beginning will start with the first 
+  animation value instead of it's natural value. backwards means it will keep the last 
+  animation value after it ends, instead of it's natural one. btoh would do both, and 
+  none would make it go to it's natural value before and after.
+animation-play-state can be running or paused.
+animation is the shorthand. Careful with the name to not include words like running, etc.
+
+Chapter 12: Canvas, SGV, and Drag and Drop:
+
+
+
+Questions:
+
+* What does -webkit- do and when should I use it? I've always wondered about that.
+
+* How does steps() work? The explanation was confusing.
+
+* What does the @ symbol actually do in CSS? I see it around but don't understand what it
+  is technically for.
