@@ -60,13 +60,48 @@ animation is the shorthand. Careful with the name to not include words like runn
 
 Chapter 12: Canvas, SGV, and Drag and Drop:
 
+Canvas-
 
+Lets you basically draw whatever you want, then animate it with transforms/transitions.
+Wowza there's a lot you can do with this stuff. I feel like I'll have to relearn it when
+  I actually use it for something.
+Good for not having to load images from elsewhere for pretty-ing up pages with visuals.
+
+Apple originally invented the Canvas API!
+
+HTML Syntax-
+<canvas>Text here will only show if it's not supported<canvas/>
+Javascript Syntax-
+var canvas = document.getElementById("myCanvas");
+var context = canvas.getContext("2d");
+
+SVG-
+
+Seems easier than canvas for most things. All of these seems like I'll have to have a 
+  specific situation to use them and it won't be much, but I could obviously be wrong
+  about that.
+Nevermind, it's only easier for simple things I think. Use Inkscape or other for more
+  complicated SVG drawings.
+
+Drag and Drop-
+
+I like this. Idk why but drag and drop items seem so great to me.
+
+<htmlElement draggable="true"></htmlElement> draggable isn't boolean, so fr say 'true'.
+Javascript events- dragstart, dragover, drop. Add to the element taking the dragged item.
+
+When an item is dragged, we save it's id in the DataTransfer object.
+
+event.preventDefault() works to override items not being able to accept dragged elements.
 
 Questions:
 
-* What does -webkit- do and when should I use it? I've always wondered about that.
+* What does -webkit- do/mean and when should I use it? I've always wondered about that.
 
 * How does steps() work? The explanation was confusing.
 
 * What does the @ symbol actually do in CSS? I see it around but don't understand what it
   is technically for.
+
+* Why would you ever draw an image in Canvas instead of just using that image?
+
