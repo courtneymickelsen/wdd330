@@ -1,0 +1,108 @@
+Chapter 9: The Window Object:
+
+Javascript always has a global object, and variables of the global score are actually 
+  just properties of it. In a browser it's the window object.
+
+BOM gives info about the browser, screen, etc. available through the window object.
+No official standard, but they all use the same properties, etc so it's kinda the same.
+Some methods aren't the most reliable. 
+
+Node.js isn't for browsers I guess. I wanna learn about it.
+
+If a variable is created without var, let, or const then it's a global variable.
+variableName = value; is a global variable.
+You can also access it using the global object name (in a browser it's window) like this:
+window.variableName; don't do this though unless you're checking if it's defined.
+
+Dialogs- alert, confirm, and prompt.
+alert()- pauses program, displays a message, always returns undefined.
+confirm()- stops program, displays a confirmation message, gives options of OK or Cancel 
+  (true if the user clicks OK, false if they click Cancel).
+promt()- stops program, displays a prompt message and input field, user input is returned
+  as a string unless user clicks cancel (then it's null).
+
+window object has a navigator object that holds info about the browser.
+userAgent returns info about the browser and OS being used.
+
+window.location is about the URL.
+window.history tells about what's happened on the page.
+window.open(url) opens a new window. Can be a variable to reference the window later.
+window.screen contains info about the screen and browser. 
+document.write() adds text to the screen (kinda like echo in php?). Don't use it though.
+
+Cookies. Learned about and used these in backend.
+Awww all cookies together are called the cookie jar?? Even if not, this is sticking.
+add 'secure' to a cookie to ensure it only goes over a secure network (https).
+
+Timing Functions- wait till a certain time or time amount to do something.
+setTimeout/clearTimeout/setinterval/clearInterval are great for animations!
+
+Chapter 14: HTML APIs:
+
+data- put data in a webpage without the browser having to deal with it.
+It's basically like making them into variables I think?
+
+syntax- 
+starts with 'data-'
+only lowercase letter, numbers, hyphens, dots, colons, and underscores
+include an optional string value.
+
+dataset property include any data- attributes an item has.
+You can use dataset.AttributeName to access it. So data-yay would also be dataset.yay.
+
+Web Storage-
+Info isn't shared with te server every time
+Info is available to multiple windows
+Storage is much bigger than it is for cookies (normally 5gb per domain)
+Doesn't automatically expire, so sometimes cookies are the better choice
+
+Ohhhh this is local storage. Got it. I've definitely used it before.
+
+Add something- localstorage.name = 'name';
+Remove something- delete localstorage.name; OR localstorage.removeItem('name');
+Clear all Local Storage- localstorage.clear();
+
+storage event fired when something is stored.
+
+Geolocation- how location is used and stored.
+
+getCurrentPosition()
+position.speed
+position.altitude
+position.heading (the direction it's moving)
+position.timestamp (time the position was recorded)
+position.accuracy
+geolocation.watchPosition() updates every time it moves.
+
+Web Workers- runs processes in the background that will take a long time?
+
+task.js is automatically downloaded and that's the script for it I think.
+woker.postmessage('message') is how you communicate between main and worker script.
+
+Notifications- 
+
+Notification.requestPermission() asks user for permission of course, returns 'granted' or
+  'denied'. Onlf if it's granted are you able ot creat a new notification.
+
+syntax-
+new Notification('notification text');
+
+Has events such as show, click, close, etc. to use in an event listener.
+
+Multimedia-
+<audio></audio>
+<video></video>
+
+video.play();, video.pause();
+video.volume = 1;, video.muted = true/false;
+video.playbackRate = 1;
+video.duration;
+
+Events are play, pause, volumechange, and loadedmetadata.
+
+Questions:
+
+* Is data- basically like making the elements into variables for later access?
+
+* Learn more about the Web Worker API! Super interesting but the textbook stuff didn't
+  make much sense to me.
