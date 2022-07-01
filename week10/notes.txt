@@ -1,0 +1,72 @@
+MDN: Client-Side Form Validaation:
+
+All data in a form needs to be validated on the frontend and backend (I've learned about
+  and worked with server-side validation in my backend class).
+Client-side validation is easy to bypass (like with the NoValidate bookmarklet) which is
+  why they're both so important.
+
+We use form validation so we can get the right info in the right format, protect the 
+  user's data, and protect ourselves and our code/application.
+
+Never trust data from a form!
+
+Two types- built-in, and javascript.
+
+Built-in is the attributes in html, like required, pattern, type, etc.
+When an element isn't valid in built-in validation, it fits the :invalid CSS pseudo-class
+  so you can use that for styling the invalid elements. When it's valid it matches :valid
+  for the same thing.
+I've learned a lot about this. Regexp is the thing that needs work, I'd like to memorize
+  the rules and format a little better.
+min/max limit the number of characters in a valid input. Same with minlength/maxlength.
+
+Javascript validation is  mostly used for errors, look and feel for invalid entries, and
+  doesn't usually control whether the form will be submitted or not.
+
+Constraint Validation API offers methods and properties you can use for elements in the 
+  DOM, elements being formatted like this: HTMLTypeElement (Type can be button, fieldset,
+  input, output, select, textarea, etc).
+Properties available for those elements- validationMessage, validity (object with more 
+  properties), willValidate.
+Methods available- chackValidity(), reportValidity(), setCustomValidity(message).
+
+Normal form error messages are default and you can't change their look and feel.
+You might also end up with form error messages in different languages than the page 
+  depending on location.
+Making your own form messages can save you from these problems. Steps are below:
+- make an event listener for the submit button, and prevent default on it.
+- use reportValidity() to check form.
+- if it is valid, submit the form.
+- if it's not valid, create an element with a custom message, look, and feel.
+- display the message without submitting the form.
+
+Javascript does a lot more heavy lifting to validate forms without a built-in api.
+
+MDN: Using the Fetch API:
+
+Fetch is different from jQuery.ajax() because it accepts error statuses (like 404, 500)
+  without rejecting, and only rejects on network failure if it can't complete a request.
+  It's also different because in cross-origin requests, it doesn't send cookies or set 
+  cookies that are returned.
+
+Fetch returns a "Response" object with different properties-
+Response.status is the status code (default 200)
+Response.statusText tells the error or status details and is a string
+Response.ok is a boolean that is true if Response.status is within the range 200-299
+
+Check if fetch is supported on the browser- if (window.fetch) {}
+
+fetch(thing to fetch)
+    .then(thingReturned => stuff to do after the fetch)
+    .then(nextThingReturned => use as many of these as you want)
+
+fetch accepts an 'init' argument that can choose settings for it.
+
+You can also use fetch to upload json data or files. Use init argument/parameter to set
+  method to post, and use formData() and an html input element with type='file'.
+
+Questions:
+
+* What's the difference between the min/max and minlength/maxlength attributes?
+
+* Is fetch used for both getting things from the user and from other sites, etc. online?
