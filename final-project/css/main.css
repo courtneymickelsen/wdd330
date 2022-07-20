@@ -52,7 +52,7 @@ section > * {
 button {
     font-family : inherit;
     background-color: #fac5b2;
-    /* color: inherit; */
+    font-size: 1.2em;
     border: none;
     height: 100px;
     width: 100px;
@@ -70,6 +70,7 @@ button:hover {
 }
 
 #listItemDiv button, #addIdeaButton, #addItemButton {
+    font-size: 1em;
     width: 60px;
     height: 60px;
 }

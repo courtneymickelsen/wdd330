@@ -39,7 +39,7 @@ function togglePopupForm(title, price = '', location = '', details = ''){
     if (!(newItemButton.textContent == "Cancel")){
         newItemButton.textContent = "Cancel";
     } else {
-        newItemButton.textContent = "Create a New Item";
+        newItemButton.textContent = "Create Item";
     }
 }
 
