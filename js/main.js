@@ -48,6 +48,10 @@ const links = [
     {
         label: "Week 10 Notes",
         url: "week10/notes.txt"
+    },
+    {
+        label: "Block 2 Challenge - Bucket List Planner",
+        url: "final-project"
     }
 ];
 
