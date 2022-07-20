@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Bucket List and Activity Planner</title>
+</head>
+<body>
+    <main>
+        <h1>Bucket List and Activity Planner</h1>
+        <div id="newItemDiv">
+            <button id="newItemButton">Create a New Item</button>
+            <form id="popupForm" class="hidden">
+                <label>Title: <input type="text" id="titleInput" required></label>
+                <label>Price: <input type="text" id="priceInput" required></label>
+                <label>Location: <input type="text" id="locationInput" required></label>
+                <label>Other Details: <input type="text" id="detailsInput" required></label>
+                <button id="addItemButton" type="button">Add Item</button>
+            </form>
+        </div>
+        <div id="newIdeaDiv">
+            <button id="getIdeaButton" type="button">Get a New Idea</button>
+            <h2 id="newIdeaHeader" class="hidden"></h2>
+            <button id="addIdeaButton" type="button" class="hidden">Save Idea</button>
+        </div>
+        <div id="listItemDiv">
+            <h2>Things I want to do:</h2>
+        </div>
+    </main>
+</body>
+</html>

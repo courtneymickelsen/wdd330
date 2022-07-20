@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+
+body {
+    font-family: 'Roboto Slab';
+    text-align: center;
+    color: #0D3059;
+    background-color: #f1f6f9;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+div {
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px solid #ABC4D9;
+    margin: 20px auto;
+    background-color: white;
+    width: 80%;
+    max-width: 600px;
+    align-items: center;
+}
+
+section {
+    padding-top: 15px;
+    /* border-radius: 10px; */
+    border-top: 2px solid #ABC4D9;
+    border-bottom: 2px solid #ABC4D9;
+    max-width: 80%;
+    margin: auto auto -2px;
+}
+
+section > * {
+    max-width: 80%;
+    margin: auto;
+}
+
+#popupForm {
+    margin: auto;
+}
+
+#popupForm input {
+    display: flex;
+    margin: auto;
+    width: 70%;
+    flex-direction: column;
+    font-family : inherit;
+}
+
+button {
+    font-family : inherit;
+    background-color: #fac5b2;
+    /* color: inherit; */
+    border: none;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    margin: 10px auto;
+    transition-duration: 500ms;
+    transition-property: transform;
+    transition-timing-function: ease;
+}
+
+button:hover {
+    background-color: #C7D8E6;
+    transform: scale(1.1);
+    border: none;
+}
+
+#listItemDiv button, #addIdeaButton, #addItemButton {
+    width: 60px;
+    height: 60px;
+}
+
+#listItemDiv button {
+    margin: 20px;
+}
+
+#listItemDiv {
+    padding-bottom: 25px;
+}
