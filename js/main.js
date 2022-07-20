@@ -30,7 +30,7 @@ const links = [
         url: "week05/notes.txt"
     },
     {
-        label: "To Do List",
+        label: "Block 1 Challenge - To Do List",
         url: "week06/todo.html"
     },
     {
@@ -51,7 +51,7 @@ const links = [
     },
     {
         label: "Block 2 Challenge - Bucket List Planner",
-        url: "final-project"
+        url: "final-project/index.html"
     }
 ];
 
