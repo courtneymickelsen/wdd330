@@ -112,7 +112,7 @@ function storeItem(jsonItem){
 
 // get a new idea from bored API
 function getIdea(){
-    fetch('http://www.boredapi.com/api/activity/')
+    fetch('https://www.boredapi.com/api/activity/')
     .then(response => response.json())
     .then(idea => displayNewIdea(idea));
 }
